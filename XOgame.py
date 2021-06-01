@@ -51,6 +51,37 @@ def draw_X_Left_North():
     line(screen, 90, (onelane1 - 100, onelane1 - 100), (secondlane1 - 100, secondlane1 - 100), 5)
     line(screen, 90, (onelane1 - 100, secondlane1 - 100), (secondlane1 - 100, onelane1 - 100), 5)
 
+
+line1 = 200
+
+def draw_O_mid():
+    circle(screen, (0, 0, 100), (line1, line1), 40)
+
+def draw_O_North():
+    circle(screen, (0, 0, 100), (line1, line1-100), 40)
+
+def draw_O_South():
+    circle(screen, (0, 0, 100), (line1, line1+100), 40)
+
+def draw_O_Left():
+    circle(screen, (0, 0, 100), (line1-100, line1), 40)
+
+def draw_O_Left_North():
+    circle(screen, (0, 0, 100), (line1 - 100, line1-100), 40)
+
+def draw_O_Left_South():
+    circle(screen, (0, 0, 100), (line1 - 100, line1+100), 40)
+
+def draw_O_Right():
+    circle(screen, (0, 0, 100), (line1+100, line1), 40)
+
+def draw_O_Right_North():
+    circle(screen, (0, 0, 100), (line1 + 100, line1-100), 40)
+
+def draw_O_Right_South():
+    circle(screen, (0, 0, 100), (line1 + 100, line1+100), 40)
+
+
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
